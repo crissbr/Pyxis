@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imgBoxLogin"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/boxlogin"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogoBoxLogin"
+        android:layout_width="103dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:tint="#AEADAD"
+        app:layout_constraintEnd_toEndOf="@+id/imgBoxLogin"
+        app:layout_constraintStart_toStartOf="@+id/imgBoxLogin"
+        app:layout_constraintTop_toTopOf="@+id/imgBoxLogin"
+        app:srcCompat="@drawable/logopyxis" />
+
+    <TextView
+        android:id="@+id/txvBoxLogin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/box_title"
+        android:textColor="#B54FF8"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBoxLogin"
+        app:layout_constraintStart_toStartOf="@+id/imgBoxLogin"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogoBoxLogin" />
+
+    <TextView
+        android:id="@+id/txvBoxLogin2"
+        android:layout_width="274dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/roboto_reg"
+        android:text="@string/box_description"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBoxLogin"
+        app:layout_constraintStart_toStartOf="@+id/imgBoxLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txvBoxLogin1" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="174dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btnstyle_login"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Login"
+        android:textColor="#B54FF8"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBoxLogin" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="174dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btnstyle_signup"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Cadastrar"
+        android:textColor="#B54FF8"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBoxLogin" />
+
+    <TextView
+        android:id="@+id/btnSurf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/box_surf"
+        android:textColor="#878787"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vwpContent"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwpContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

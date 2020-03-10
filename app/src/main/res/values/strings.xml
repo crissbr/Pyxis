@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pyxis</string>
+    <string name="box_title">O navegador feito para você!</string>
+    <string name="box_description">Cadastre-se ou faça login para acessar todas as funcionalidades.</string>
+    <string name="box_surf">NAVEGAR SEM CADASTRAR-SE</string>
+    <string name="dots">&#8226;</string>
+</resources>

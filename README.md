@@ -1,7 +1,7 @@
 # Pyxis
 Navegador Web para aplicativos Android
 
-Pyxis é um navegador Web simples criado como um projeto no curso de Desenvolvimento Android oferecido pela escola MadCode/Cellep
+Pyxis é um navegador Web simples criado como um projeto do curso de Desenvolvimento Android Kotlin oferecido pela escola MadCode/Cellep
 em parceria com a Estação Hack do Facebook.
 
 O App foi desenvolvido no Android Studio e foi usada a linguagem Kotlin.
